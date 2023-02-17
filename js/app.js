@@ -14,7 +14,7 @@ const app = {
     this.$ulGroceries = document.querySelector("#groceries");
   },
   registerListeners() {
-    this.$inpGrocery.addEventListener("keyup", (e) => {
+    this.$inpGrocery.addEventListener("keydown", (e) => {
       e.preventDefault(); // voorkomt dat de pagina herlaadt
       // als de gebruiker op enter drukt, voeg de boodschap toe
       if (e.key === "Enter") {
