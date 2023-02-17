@@ -15,9 +15,9 @@ const app = {
   },
   registerListeners() {
     this.$inpGrocery.addEventListener("keydown", (e) => {
-      e.preventDefault(); // voorkomt dat de pagina herlaadt
       // als de gebruiker op enter drukt, voeg de boodschap toe
       if (e.key === "Enter") {
+        e.preventDefault(); // voorkomt dat de pagina herlaadt
         const grocery = this.$inpGrocery.value;
         this.addGrocery(grocery);
         this.$inpGrocery.value = "";
